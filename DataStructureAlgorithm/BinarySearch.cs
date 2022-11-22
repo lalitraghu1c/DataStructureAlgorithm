@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructureAlgorithm
 {
-    public class BinarySearch
+    public class BinarySearch : InsertionSorting
     {
         string[] binaryArr;
         public void ReadTextFiles(string filePath)
@@ -16,12 +16,12 @@ namespace DataStructureAlgorithm
         }
         public void BinarySearchOperation()
         {
-            string input = Console.ReadLine().ToLower();
+            string input = Console.ReadLine();
             foreach (var words in binaryArr)
             {
                 if (words.Equals(input))
                 {
-                    Console.WriteLine("{0} - Yupiee, Found the word in the list using binary search");
+                    Console.WriteLine("Yupiee, Found the word in the list using binary search");
                     return;
                 }
             }
