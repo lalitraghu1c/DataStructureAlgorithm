@@ -18,11 +18,20 @@ namespace DataStructureAlgorithm
                         Console.WriteLine("Enter the word you want to Search");
                         binary.ReadTextFiles(@"D:\Projects-Bridgelabz\DataStructureAlgorithm\DataStructureAlgorithm\Files\BinarySearch.txt");
                         binary.BinarySearchOperation();
+                        Console.WriteLine("\n");
                         break;
                     case 2:
                         Console.WriteLine("\n");
                         int[] arr = { 2, 5, 7, 6, 1, 4 };
                         binary.Sort(arr);
+                        Console.WriteLine("\n");
+                        break;
+                    case 3:
+                        Console.WriteLine("\n");
+                        int[] arr1 = { 8,3,5,8,8,1,4,3,9,2 };
+                        BubbleSort bubbleSort = new BubbleSort();
+                        bubbleSort.Bubble(arr1);
+                        Console.WriteLine("\n");
                         break;
                     default:
                         Console.WriteLine("Try Again");
