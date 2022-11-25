@@ -9,7 +9,7 @@ namespace DataStructureAlgorithm
             bool condition = true;
             while (condition)
             {
-                Console.WriteLine("1. Binary Search\n2. Insertion Sorting\n3. Bubble Sort\n4. Anagram\n5. Replace the String using Regex\n6. Exit");
+                Console.WriteLine("1. Binary Search\n2. Insertion Sorting\n3. Bubble Sort\n4. Anagram\n5. Replace the String using Regex\n6. Ordered List\n7. Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -41,6 +41,11 @@ namespace DataStructureAlgorithm
                     case 5:
                         Replace replace = new Replace();
                         replace.ReplaceString();
+                        break;
+                    case 6:
+                        OrderedList orderedList = new OrderedList();
+                        orderedList.ReadTextFile(@"D:\Projects-Bridgelabz\DataStructureAlgorithm\DataStructureAlgorithm\Files\SortingList.txt");
+                        Console.WriteLine("\n");
                         break;
                     default:
                         Console.WriteLine("Try Again");
