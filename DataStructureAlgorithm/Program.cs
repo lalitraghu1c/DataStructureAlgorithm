@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Runtime;
+
 namespace DataStructureAlgorithm
 {
     public class Program
@@ -9,7 +11,7 @@ namespace DataStructureAlgorithm
             bool condition = true;
             while (condition)
             {
-                Console.WriteLine("1. Binary Search\n2. Insertion Sorting\n3. Bubble Sort\n4. Anagram\n5. Replace the String using Regex\n6. Ordered List\n7. Unordered List\n8. Exit");
+                Console.WriteLine("1. Binary Search\n2. Insertion Sorting\n3. Bubble Sort\n4. Anagram\n5. Replace the String using Regex\n6. Ordered List\n7. Unordered List\n8. Balanced Parantheses\n9. Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -56,6 +58,10 @@ namespace DataStructureAlgorithm
                         Console.WriteLine("Sub is going to Delete");
                         unordered.Delete();
                         unordered.Display();
+                        break;
+                    case 8:
+                        BalancedParanthesis balance = new BalancedParanthesis();
+                        balance.ReadTextFile(@"D:\Projects-Bridgelabz\DataStructureAlgorithm\DataStructureAlgorithm\Files\BalancedParanthesis.txt");
                         break;
                     default:
                         Console.WriteLine("Try Again");
